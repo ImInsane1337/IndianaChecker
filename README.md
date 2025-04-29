@@ -18,7 +18,7 @@
 ---
 
 **🛡 Разработка:**
-> Проект создаётся в рамках инфраструктуры **Indiana RP**
+> Проект создаётся в рамках инфраструктуры **Indiana RP**\n
 > **[IndianaRP TG](https://t.me/indiana_rp)**
 > **[IndianaRP VK](https://vk.com/indianarp)**
 > **[IndianaRP Discord](https://discord.com/invite/indiana-rp)**
