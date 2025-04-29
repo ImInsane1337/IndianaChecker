@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ServerHelper
 {
@@ -28,6 +29,21 @@ namespace ServerHelper
             Checker checkerForm = new Checker();
             checkerForm.FormClosed += (s, args) => this.Close();
             checkerForm.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://t.me/indiana_rp");
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://vk.com/indianarp");
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.gg/indiana-rp");
         }
     }
 }
