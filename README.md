@@ -18,9 +18,9 @@
 ---
 
 **🛡 Разработка:**
-> Проект создаётся в рамках инфраструктуры **Indiana RP**
-**[IndianaRP TG](https://t.me/indiana_rp)**
-**[IndianaRP VK](https://vk.com/indianarp)**
-**[IndianaRP Discord](https://discord.com/invite/indiana-rp)**
+> Проект создаётся в рамках инфраструктуры **Indiana RP** |
+| **[IndianaRP TG](https://t.me/indiana_rp)**
+| **[IndianaRP VK](https://vk.com/indianarp)**
+| **[IndianaRP Discord](https://discord.com/invite/indiana-rp)**
 
 > Автор: [ImInsane](https://github.com/ImInsane1337)
