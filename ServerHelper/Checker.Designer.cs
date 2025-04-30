@@ -44,7 +44,19 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.nicktext = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.sidtext = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dstext = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.reasontext = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +73,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(144)))), ((int)(((byte)(144)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(39, 39);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(39, 33);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(49, 17);
             this.guna2HtmlLabel7.TabIndex = 9;
@@ -72,7 +84,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(39, 12);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(39, 3);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(98, 30);
             this.guna2HtmlLabel6.TabIndex = 8;
@@ -94,10 +106,10 @@
             this.Recent.ForeColor = System.Drawing.Color.White;
             this.Recent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.Recent.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.Recent.Location = new System.Drawing.Point(39, 83);
+            this.Recent.Location = new System.Drawing.Point(15, 62);
             this.Recent.Name = "Recent";
             this.Recent.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.Recent.Size = new System.Drawing.Size(180, 45);
+            this.Recent.Size = new System.Drawing.Size(149, 31);
             this.Recent.TabIndex = 10;
             this.Recent.Text = "RECENT + C:\\";
             this.Recent.Click += new System.EventHandler(this.Recent_Click);
@@ -118,10 +130,10 @@
             this.GMOD.ForeColor = System.Drawing.Color.White;
             this.GMOD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.GMOD.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.GMOD.Location = new System.Drawing.Point(249, 83);
+            this.GMOD.Location = new System.Drawing.Point(15, 99);
             this.GMOD.Name = "GMOD";
             this.GMOD.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.GMOD.Size = new System.Drawing.Size(180, 45);
+            this.GMOD.Size = new System.Drawing.Size(149, 31);
             this.GMOD.TabIndex = 11;
             this.GMOD.Text = "LUA GMOD";
             this.GMOD.Click += new System.EventHandler(this.GMOD_Click);
@@ -142,10 +154,10 @@
             this.LastActivity.ForeColor = System.Drawing.Color.White;
             this.LastActivity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.LastActivity.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.LastActivity.Location = new System.Drawing.Point(457, 83);
+            this.LastActivity.Location = new System.Drawing.Point(15, 136);
             this.LastActivity.Name = "LastActivity";
             this.LastActivity.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.LastActivity.Size = new System.Drawing.Size(180, 45);
+            this.LastActivity.Size = new System.Drawing.Size(149, 31);
             this.LastActivity.TabIndex = 12;
             this.LastActivity.Text = "LastActivity";
             this.LastActivity.Click += new System.EventHandler(this.LastActivity_Click);
@@ -166,10 +178,10 @@
             this.recuva.ForeColor = System.Drawing.Color.White;
             this.recuva.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.recuva.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.recuva.Location = new System.Drawing.Point(457, 146);
+            this.recuva.Location = new System.Drawing.Point(15, 285);
             this.recuva.Name = "recuva";
             this.recuva.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.recuva.Size = new System.Drawing.Size(180, 45);
+            this.recuva.Size = new System.Drawing.Size(149, 31);
             this.recuva.TabIndex = 15;
             this.recuva.Text = "Recuva";
             this.recuva.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -190,10 +202,10 @@
             this.ph.ForeColor = System.Drawing.Color.White;
             this.ph.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.ph.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.ph.Location = new System.Drawing.Point(249, 146);
+            this.ph.Location = new System.Drawing.Point(15, 210);
             this.ph.Name = "ph";
             this.ph.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ph.Size = new System.Drawing.Size(180, 45);
+            this.ph.Size = new System.Drawing.Size(149, 31);
             this.ph.TabIndex = 14;
             this.ph.Text = "Process Hacker";
             this.ph.Click += new System.EventHandler(this.ph_Click);
@@ -214,10 +226,10 @@
             this.Everything.ForeColor = System.Drawing.Color.White;
             this.Everything.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.Everything.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.Everything.Location = new System.Drawing.Point(39, 146);
+            this.Everything.Location = new System.Drawing.Point(15, 173);
             this.Everything.Name = "Everything";
             this.Everything.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.Everything.Size = new System.Drawing.Size(180, 45);
+            this.Everything.Size = new System.Drawing.Size(149, 31);
             this.Everything.TabIndex = 13;
             this.Everything.Text = "Everything";
             this.Everything.Click += new System.EventHandler(this.Everything_Click);
@@ -238,10 +250,10 @@
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.HoverState.BorderColor = System.Drawing.Color.DarkRed;
             this.exit.HoverState.CustomBorderColor = System.Drawing.Color.DarkRed;
-            this.exit.Location = new System.Drawing.Point(249, 215);
+            this.exit.Location = new System.Drawing.Point(572, 292);
             this.exit.Name = "exit";
             this.exit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.exit.Size = new System.Drawing.Size(180, 45);
+            this.exit.Size = new System.Drawing.Size(88, 31);
             this.exit.TabIndex = 16;
             this.exit.Text = "Выйти";
             this.exit.Click += new System.EventHandler(this.exit_Click);
@@ -262,10 +274,10 @@
             this.usb.ForeColor = System.Drawing.Color.White;
             this.usb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.usb.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.usb.Location = new System.Drawing.Point(39, 215);
+            this.usb.Location = new System.Drawing.Point(15, 248);
             this.usb.Name = "usb";
             this.usb.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.usb.Size = new System.Drawing.Size(180, 45);
+            this.usb.Size = new System.Drawing.Size(149, 31);
             this.usb.TabIndex = 17;
             this.usb.Text = "USBDeview";
             this.usb.Click += new System.EventHandler(this.usb_Click);
@@ -336,11 +348,100 @@
             this.guna2Button2.TabIndex = 20;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // nicktext
+            // 
+            this.nicktext.BackColor = System.Drawing.Color.Transparent;
+            this.nicktext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.nicktext.ForeColor = System.Drawing.Color.White;
+            this.nicktext.Location = new System.Drawing.Point(12, 8);
+            this.nicktext.Name = "nicktext";
+            this.nicktext.Size = new System.Drawing.Size(133, 23);
+            this.nicktext.TabIndex = 23;
+            this.nicktext.Text = "Nickname: {nick}";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(29)))), ((int)(((byte)(110)))));
+            this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.nicktext);
+            this.guna2Panel1.Location = new System.Drawing.Point(254, 62);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(329, 38);
+            this.guna2Panel1.TabIndex = 24;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(29)))), ((int)(((byte)(110)))));
+            this.guna2Panel2.BorderRadius = 10;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.sidtext);
+            this.guna2Panel2.Location = new System.Drawing.Point(254, 149);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(329, 38);
+            this.guna2Panel2.TabIndex = 25;
+            // 
+            // sidtext
+            // 
+            this.sidtext.BackColor = System.Drawing.Color.Transparent;
+            this.sidtext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.sidtext.ForeColor = System.Drawing.Color.White;
+            this.sidtext.Location = new System.Drawing.Point(12, 8);
+            this.sidtext.Name = "sidtext";
+            this.sidtext.Size = new System.Drawing.Size(149, 23);
+            this.sidtext.TabIndex = 23;
+            this.sidtext.Text = "SteamID: {steamid}";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(29)))), ((int)(((byte)(110)))));
+            this.guna2Panel3.BorderRadius = 10;
+            this.guna2Panel3.BorderThickness = 2;
+            this.guna2Panel3.Controls.Add(this.dstext);
+            this.guna2Panel3.Location = new System.Drawing.Point(254, 106);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(329, 38);
+            this.guna2Panel3.TabIndex = 26;
+            // 
+            // dstext
+            // 
+            this.dstext.BackColor = System.Drawing.Color.Transparent;
+            this.dstext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.dstext.ForeColor = System.Drawing.Color.White;
+            this.dstext.Location = new System.Drawing.Point(12, 8);
+            this.dstext.Name = "dstext";
+            this.dstext.Size = new System.Drawing.Size(98, 23);
+            this.dstext.TabIndex = 23;
+            this.dstext.Text = "Discord: {ds}";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(29)))), ((int)(((byte)(110)))));
+            this.guna2Panel4.BorderRadius = 10;
+            this.guna2Panel4.BorderThickness = 2;
+            this.guna2Panel4.Controls.Add(this.reasontext);
+            this.guna2Panel4.Location = new System.Drawing.Point(254, 193);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(329, 86);
+            this.guna2Panel4.TabIndex = 26;
+            // 
+            // reasontext
+            // 
+            this.reasontext.AutoSize = false;
+            this.reasontext.BackColor = System.Drawing.Color.Transparent;
+            this.reasontext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.reasontext.ForeColor = System.Drawing.Color.White;
+            this.reasontext.Location = new System.Drawing.Point(12, 8);
+            this.reasontext.Name = "reasontext";
+            this.reasontext.Size = new System.Drawing.Size(310, 66);
+            this.reasontext.TabIndex = 23;
+            this.reasontext.Text = "Причина проверки: о да я секси бой 1337 тест текст еее";
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 18);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(18, 38);
             this.guna2PictureBox1.TabIndex = 18;
@@ -351,7 +452,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(672, 291);
+            this.ClientSize = new System.Drawing.Size(672, 335);
+            this.Controls.Add(this.guna2Panel4);
+            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
@@ -371,6 +476,13 @@
             this.Name = "Checker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IndianaRP | Checker";
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -394,5 +506,13 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        public Guna.UI2.WinForms.Guna2HtmlLabel sidtext;
+        public Guna.UI2.WinForms.Guna2HtmlLabel nicktext;
+        public Guna.UI2.WinForms.Guna2HtmlLabel reasontext;
+        public Guna.UI2.WinForms.Guna2HtmlLabel dstext;
     }
 }

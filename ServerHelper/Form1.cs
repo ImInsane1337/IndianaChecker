@@ -26,7 +26,7 @@ namespace ServerHelper
         private void NextButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Checker checkerForm = new Checker();
+            Info checkerForm = new Info();
             checkerForm.FormClosed += (s, args) => this.Close();
             checkerForm.Show();
         }
