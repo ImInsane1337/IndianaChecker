@@ -92,40 +92,75 @@ namespace ServerHelper
             LastActivity.Visible = true;
         }
 
-        private void LastActivity_Click(object sender, EventArgs e)
+        private void usb_Click(object sender, EventArgs e)
         {
-            RunEmbeddedExe("ServerHelper.Files.LA.LastActivityView.exe", "LastActivityView.exe");
-            Everything.Visible = true;
-        }
-
-        private void Everything_Click(object sender, EventArgs e)
-        {
-            RunEmbeddedExe("ServerHelper.Files.EV.ev.exe", "ev.exe");
-            string clipText = "(AOShax | hl2 | v2 | nj | dll | loader | inject | hack | Macros | чит | Cheat | Xore | Privat | Приват | Lua | \"Free The Skids\" | \"Lee Cheat\" | \"MethMine loader\" | FriendlyHack | \"Glua Loader\" | \"Bigpackets\" | \"FriendlyStealer (урбаничка)\" | \"Interium Glua Loader (урбаничка)\" | \"Other (урбаничка)\" | Exec | \"BigPackets\" | \"Cobalt и Refix\" | \"Exec Hack\" | \"Meta Hack\" | OneTap | \"LemiGmod\" | Lemi | Nixware | CFF | \".7z\" | \".rar\" | \".aos\" | \".vpcfg\" | \".cfgexec\" | \".otc\" | brokencore | \"Urbanichka\" | Noxis | rijin | bhop | bzhop | SimpleGmod | Gaztoof | GMOD) ";
-            Clipboard.SetText(clipText);
-
-            ph.Visible = true;
+            var form = new AppInfo();
+            form.SetInfo(
+                "USBDeview",
+                "USBDeview — утилита, отображающая список всех USB-устройств, подключённых к системе ранее или в данный момент. Позволяет отключать, удалять устройства, а также просматривать подробную информацию о каждом из них.",
+                () =>
+                {
+                    RunEmbeddedExe("ServerHelper.Files.USB.USB.exe", "USB.exe");
+                });
+            form.ShowDialog();
         }
 
         private void ph_Click(object sender, EventArgs e)
         {
-            RunEmbeddedExe("ServerHelper.Files.PH.ProcessHacker.exe", "ProcessHacker.exe");
-            recuva.Visible = true;
+            var form = new AppInfo();
+            form.SetInfo(
+                "Process Hacker 2",
+                "Process Hacker — продвинутый менеджер задач и процессов, предоставляющий расширенную информацию о работающих службах, процессах и использовании ресурсов. Полезен для диагностики и анализа системы.",
+                () =>
+                {
+                    RunEmbeddedExe("ServerHelper.Files.PH.ProcessHacker.exe", "ProcessHacker.exe");
+                });
+            form.ShowDialog();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e) // RC
         {
-            RunEmbeddedExe("ServerHelper.Files.RC.rc.exe", "rc.exe");
+            var form = new AppInfo();
+            form.SetInfo(
+                "Recuva",
+                "Recuva — утилита для восстановления удалённых файлов с жёстких дисков, флешек и других накопителей. Простая и эффективная в использовании, поддерживает глубокий анализ и восстановление даже повреждённых данных.",
+                () =>
+                {
+                    RunEmbeddedExe("ServerHelper.Files.RC.rc.exe", "rc.exe");
+                });
+            form.ShowDialog();
+        }
+
+        private void LastActivity_Click(object sender, EventArgs e)
+        {
+            var form = new AppInfo();
+            form.SetInfo(
+                "LastActivityView",
+                "LastActivityView — инструмент для отображения последних действий пользователя: запусков программ, открытий файлов, системных событий и многого другого. Удобен при анализе поведения пользователя и отслеживании активности.",
+                () =>
+                {
+                    RunEmbeddedExe("ServerHelper.Files.LA.LastActivityView.exe", "LastActivityView.exe");
+                });
+            form.ShowDialog();
+        }
+        private void Everything_Click(object sender, EventArgs e)
+        {
+            var form = new AppInfo();
+            form.SetInfo(
+                "Everything",
+                "Everything — это быстрый и мощный инструмент для поиска файлов и папок на вашем компьютере. Он индексирует все файлы и позволяет выполнять поиск в реальном времени по всем доступным дискам и папкам. Подходит для пользователей, которые часто ищут файлы в больших объемах данных.",
+                () =>
+                {
+                    RunEmbeddedExe("ServerHelper.Files.EV.ev.exe", "ev.exe");
+                    string clipText = "(AOShax | hl2 | v2 | nj | dll | loader | inject | hack | Macros | чит | Cheat | Xore | Privat | Приват | Lua | \"Free The Skids\" | \"Lee Cheat\" | \"MethMine loader\" | FriendlyHack | \"Glua Loader\" | \"Bigpackets\" | \"FriendlyStealer (урбаничка)\" | \"Interium Glua Loader (урбаничка)\" | \"Other (урбаничка)\" | Exec | \"BigPackets\" | \"Cobalt и Refix\" | \"Exec Hack\" | \"Meta Hack\" | OneTap | \"LemiGmod\" | Lemi | Nixware | CFF | \".7z\" | \".rar\" | \".aos\" | \".vpcfg\" | \".cfgexec\" | \".otc\" | brokencore | \"Urbanichka\" | Noxis | rijin | bhop | bzhop | SimpleGmod | Gaztoof | GMOD) ";
+                    Clipboard.SetText(clipText);
+                });
+            form.ShowDialog();
         }
 
         private void exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-        }
-
-        private void usb_Click(object sender, EventArgs e)
-        {
-            RunEmbeddedExe("ServerHelper.Files.USB.USB.exe", "USB.exe");
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
