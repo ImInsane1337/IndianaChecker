@@ -118,7 +118,7 @@ namespace ServerHelper
             form.ShowDialog();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e) // RC
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             var form = new AppInfo();
             form.SetInfo(
@@ -176,6 +176,49 @@ namespace ServerHelper
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             Process.Start("https://discord.gg/indiana-rp");
+        }
+
+        private void chromium_Click(object sender, EventArgs e)
+        {
+            string steamPath = GetSteamInstallPath();
+
+            if (!string.IsNullOrEmpty(steamPath))
+            {
+                string pathC = Path.Combine(steamPath, @"steamapps\common\GarrysMod\chromium.log");
+                string pathD = @"D:\SteamLibrary\steamapps\common\GarrysMod\chromium.log";
+
+                if (File.Exists(pathC))
+                {
+                    Process.Start("notepad.exe", pathC);
+                }
+                else if (File.Exists(pathD))
+                {
+                    Process.Start("notepad.exe", pathD);
+                }
+                else
+                {
+                    MessageBox.Show("Chromium log не найден!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Стим не установлен либо нету файлов в реестре", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            LastActivity.Visible = true;
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Открывает браузер с пустой страницей
+                Process.Start("https://example.com");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

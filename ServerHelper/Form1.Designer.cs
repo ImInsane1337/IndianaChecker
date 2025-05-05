@@ -34,7 +34,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.NextButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,6 +41,7 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.NextButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,34 +91,11 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(102, 165);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(86, 165);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(375, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(406, 22);
             this.guna2HtmlLabel4.TabIndex = 3;
-            this.guna2HtmlLabel4.Text = "Нажми \"Продолжить\" для того что-бы приступить";
-            // 
-            // NextButton
-            // 
-            this.NextButton.Animated = true;
-            this.NextButton.BackColor = System.Drawing.Color.Transparent;
-            this.NextButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.NextButton.BorderRadius = 8;
-            this.NextButton.BorderThickness = 2;
-            this.NextButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.NextButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.NextButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.NextButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.NextButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.NextButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.NextButton.ForeColor = System.Drawing.Color.White;
-            this.NextButton.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
-            this.NextButton.Location = new System.Drawing.Point(199, 228);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.NextButton.Size = new System.Drawing.Size(180, 45);
-            this.NextButton.TabIndex = 4;
-            this.NextButton.Text = "Продолжить";
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.guna2HtmlLabel4.Text = "Нажми \"Начать проверку\" для того что-бы приступить";
             // 
             // guna2HtmlLabel5
             // 
@@ -233,12 +210,36 @@
             this.guna2Button2.TabIndex = 23;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // NextButton
+            // 
+            this.NextButton.Animated = true;
+            this.NextButton.BackColor = System.Drawing.Color.Transparent;
+            this.NextButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.NextButton.BorderRadius = 8;
+            this.NextButton.BorderThickness = 2;
+            this.NextButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.NextButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.NextButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.NextButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.NextButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.NextButton.ForeColor = System.Drawing.Color.White;
+            this.NextButton.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
+            this.NextButton.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
+            this.NextButton.Location = new System.Drawing.Point(195, 223);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.NextButton.Size = new System.Drawing.Size(188, 44);
+            this.NextButton.TabIndex = 26;
+            this.NextButton.Text = "Начать проверку";
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(578, 300);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
@@ -246,7 +247,6 @@
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -269,7 +269,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button NextButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
@@ -277,6 +276,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button NextButton;
     }
 }
 
