@@ -45,5 +45,13 @@ namespace ServerHelper
         {
             Process.Start("https://discord.gg/indiana-rp");
         }
+
+        private void CheckerStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Info checkerForm = new Info();
+            checkerForm.FormClosed += (s, args) => this.Close();
+            checkerForm.Show();
+        }
     }
 }

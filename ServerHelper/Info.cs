@@ -24,26 +24,17 @@ namespace ServerHelper
 
         private void CheckerStart_Click(object sender, EventArgs e)
         {
-            // Проверка на пустые поля
             if (string.IsNullOrWhiteSpace(sid.Text) ||
                 string.IsNullOrWhiteSpace(ds.Text) ||
-                string.IsNullOrWhiteSpace(nick.Text) ||
-                string.IsNullOrWhiteSpace(reason.Text))
+                string.IsNullOrWhiteSpace(nick.Text))
             {
                 MessageBox.Show("Пожалуйста, заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            // Создание экземпляра формы Checker
             Checker checkerForm = new Checker();
-
-            // Установка текстов на новой форме
             checkerForm.sidtext.Text = $"SteamID: {sid.Text}";
             checkerForm.dstext.Text = $"Discord: {ds.Text}";
             checkerForm.nicktext.Text = $"Nickname: {nick.Text}";
-            checkerForm.reasontext.Text = $"Причина проверки: {reason.Text}";
-
-            // Показ новой формы и скрытие текущей
             checkerForm.Show();
             this.Hide();
         }

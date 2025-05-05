@@ -120,4 +120,25 @@
   <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="BunifuLabel1337.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Cascadia Code SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(65, 65, 65); text-align: left; }</value>
+  </data>
+  <data name="loadingtext.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Cascadia Code SemiBold'; font-size: 13pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(188, 188, 188); text-align: left; }</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CheckerStart.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKcAAAAnCAYAAABqplg0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHdSURBVHhe7dy9SsNQGIfxjo6O9jtpaNJ26eoleBOCi+Do
+        qJsX4CAO7p07uzq69g4KDiL4DX6CQ/y/MSrKWdu8w3PgRwM96fRwTtLh1P6Pbre7kmXZ1mAwONHnTJ85
+        sAjWl0xkZzwer5YJhoduWNfEi16v9xRFUd5ut/N6vQ4shPWlxTBXby/q7jpN040yxb9DYe73+/2HZrMZ
+        /CFgkaw760+OyiS/hq2Y9kXoJmCZkiS5Hw6Hm0WY5TPmFSsmPGg0Grm299vRaLRmq+ZuHMfvoYlAFex9
+        R12e1FTp1B5KQ5OAKtiLknbzma2c81arFZwEVMG2dnX5anEGJwBVsi6JEy4RJ9wiTrhFnHCLOOEWccIt
+        4oRbxAm3iBNuESfcIk64RZxwizjhFnHCLeKEW8QJt4gTbhEn3CJOuEWccIs44RZxwq0izizLbjiKBt6o
+        yw9bOc86nU5wAlAFO+RDXc4tzr0oij5Ck4Aq2PFIWjkntq1HaZpy/CHcsOM4tWiuF8cg6mI7SZLH0ERg
+        mbSLP2mxPCzC/B727BnH8XPoBmAZFOabwjy3M2PLLH+HtvgDfXlnez4nz2EZ7J8ieyG3rVztHQfD/B6a
+        MJCpvS1J8X8TsChq7VJOdf31jPkzarVP+cXN7rjPjKgAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

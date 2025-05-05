@@ -21,17 +21,16 @@ namespace ServerHelper
         {
             Name.Text = name;
             Description.Text = description;
-            AppStart.Click -= AppStart_Click; // Отключаем старые обработчики
-            AppStart.Click += (s, e) => onStart();
+            CheckerStart.Click -= CheckerStart_Click;
+            CheckerStart.Click += (s, e) => onStart();
         }
 
-
-        private void AppStart_Click(object sender, EventArgs e)
+        private void CheckerStart_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

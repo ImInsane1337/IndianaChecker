@@ -45,12 +45,10 @@ namespace ServerHelper
             string steamPath = string.Empty;
             try
             {
-                // Открываем ключ реестра, где хранится путь установки Steam
                 using (var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Valve\Steam"))
                 {
                     if (key != null)
                     {
-                        // Читаем путь из значения "SteamPath"
                         steamPath = key.GetValue("SteamPath") as string;
                     }
                 }
@@ -81,7 +79,7 @@ namespace ServerHelper
                 }
                 else
                 {
-                    MessageBox.Show("Garry's Mod lua\\bin directory not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не найдена папка с lua/bin, все чисто.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -97,7 +95,7 @@ namespace ServerHelper
             var form = new AppInfo();
             form.SetInfo(
                 "USBDeview",
-                "USBDeview — утилита, отображающая список всех USB-устройств, подключённых к системе ранее или в данный момент. Позволяет отключать, удалять устройства, а также просматривать подробную информацию о каждом из них.",
+                "При запуске USBDeview дождитесь загрузки и следуйте указаниям проверяющего!",
                 () =>
                 {
                     RunEmbeddedExe("ServerHelper.Files.USB.USB.exe", "USB.exe");
@@ -110,7 +108,7 @@ namespace ServerHelper
             var form = new AppInfo();
             form.SetInfo(
                 "Process Hacker 2",
-                "Process Hacker — продвинутый менеджер задач и процессов, предоставляющий расширенную информацию о работающих службах, процессах и использовании ресурсов. Полезен для диагностики и анализа системы.",
+                "При запуске Process Hacker 2 найдите либо hl2.exe или gmod.exe, нажмите ПКМ на него и нажмите 'Miscellaneous', далее следуйте указаниям проверяющего!",
                 () =>
                 {
                     RunEmbeddedExe("ServerHelper.Files.PH.ProcessHacker.exe", "ProcessHacker.exe");
@@ -118,12 +116,12 @@ namespace ServerHelper
             form.ShowDialog();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void recuva_Click(object sender, EventArgs e)
         {
             var form = new AppInfo();
             form.SetInfo(
                 "Recuva",
-                "Recuva — утилита для восстановления удалённых файлов с жёстких дисков, флешек и других накопителей. Простая и эффективная в использовании, поддерживает глубокий анализ и восстановление даже повреждённых данных.",
+                "При запуске установщика Recuva надо установить программу и запустить её, далее следуйте указаниям проверяющего! После проверки программу можно удалить.",
                 () =>
                 {
                     RunEmbeddedExe("ServerHelper.Files.RC.rc.exe", "rc.exe");
@@ -136,7 +134,7 @@ namespace ServerHelper
             var form = new AppInfo();
             form.SetInfo(
                 "LastActivityView",
-                "LastActivityView — инструмент для отображения последних действий пользователя: запусков программ, открытий файлов, системных событий и многого другого. Удобен при анализе поведения пользователя и отслеживании активности.",
+                "При запуске LastActivityView дождитесь загрузки, далее следуйте указаниям проверяющего!",
                 () =>
                 {
                     RunEmbeddedExe("ServerHelper.Files.LA.LastActivityView.exe", "LastActivityView.exe");
@@ -148,7 +146,7 @@ namespace ServerHelper
             var form = new AppInfo();
             form.SetInfo(
                 "Everything",
-                "Everything — это быстрый и мощный инструмент для поиска файлов и папок на вашем компьютере. Он индексирует все файлы и позволяет выполнять поиск в реальном времени по всем доступным дискам и папкам. Подходит для пользователей, которые часто ищут файлы в больших объемах данных.",
+                "При запуске Everything дождитесь загрузки, далее вставьте текст в поле ввода Everything нажав CTRL+V либо ПКМ+Вставить. Далее следуйте указаниям проверяющего!",
                 () =>
                 {
                     RunEmbeddedExe("ServerHelper.Files.EV.ev.exe", "ev.exe");
@@ -161,21 +159,6 @@ namespace ServerHelper
         private void exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://t.me/indiana_rp");
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-            Process.Start("https://vk.com/indianarp");
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://discord.gg/indiana-rp");
         }
 
         private void chromium_Click(object sender, EventArgs e)
@@ -197,7 +180,7 @@ namespace ServerHelper
                 }
                 else
                 {
-                    MessageBox.Show("Chromium log не найден!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Логи Chromium не найдены.\nВозможно не установлена ветка в Steam!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -208,17 +191,36 @@ namespace ServerHelper
             LastActivity.Visible = true;
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void browser_Click(object sender, EventArgs e)
         {
             try
             {
-                // Открывает браузер с пустой страницей
-                Process.Start("https://example.com");
+                Process.Start("https://github.com/ImInsane1337/IndianaChecker/tree/master");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2Button6_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("https://t.me/indiana_rp");
+        }
+
+        private void guna2Button5_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("https://vk.com/indianarp");
+        }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.gg/indiana-rp");
+        }
+
+        private void exit_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
